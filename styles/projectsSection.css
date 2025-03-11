@@ -22,6 +22,7 @@ section#projects {
     border-radius: 2em;
     background: none;
     cursor: pointer;
+    transition: background-color 100ms ease-in-out;
 }
 
 .tab:hover {
@@ -36,6 +37,7 @@ section#projects {
     color: #f97316;
     text-decoration: none;
     font-size: 1.3em;
+    transition: color 100ms ease-in-out;
 }
 
 .project-article a:hover {
@@ -54,4 +56,11 @@ div#gallery {
     width: 200px;
     object-fit: cover;
     border-radius: 1em;
+    transition: height 100ms ease-in-out,
+    width 100ms ease-in-out;
+}
+
+.project-image:hover {
+    height: 220px;
+    width: 220px;
 }
