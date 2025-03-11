@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/aboutSection.css">
+    <link rel="stylesheet" href="styles/stackSection.css">
+    <link rel="stylesheet" href="styles/projectsSection.css">
     <title>Icicle Icifur</title>
 </head>
 <body>
@@ -12,14 +15,14 @@
 </header>
 <main>
     <section id="about" class="global-section">
-        <article>
+        <article class="about-article">
             <h2>Обо мне</h2>
             <p>
                 Привет, меня зовут Олеся, и я - начинающий фронтенд-разработчик. Меня интересует все, связанное с
                 интерфейсами, дизайном, UX/UI и пользовательским опытом.
             </p>
         </article>
-        <figure class="rounded-photo">
+        <figure class="about-photo">
             <img src="personal_photo.jpg" alt="my photo"/>
         </figure>
 
@@ -37,23 +40,24 @@
 
     <section id="projects" class="global-section">
         <h2>Мои проекты</h2>
-        <div id="tabs" class="tabs">
-
-
-        </div>
+        <div id="tabs" class="tabs"></div>
         <section id="current_project">
-
+            <article class="project-article">
+                <h3>
+                    <a id="project_title"></a>
+                </h3>
+                <p id="description"></p></article>
+            <div id="gallery"></div>
         </section>
     </section>
 </main>
 <footer>
-    <section>
-        <p>Свяжитесь со мной:</p>
-        <a href="">GitHub</a>
-        <a href="">Telegram</a>
-        <a href="">Вконтакте</a>
+    <section class="contacts">
+        <a href="https://github.com/IciIcifur">GitHub</a>
+        <a href="https://t.me/icicle_icifur">Telegram</a>
+        <a href="https://vk.com/icicle_icifur">Вконтакте</a>
     </section>
-    <p>&copy; 2025 Icicle_Icifur. Все права защищены.</p>
+    <p>&copy; 2025 IciIcifur. Все права защищены.</p>
 </footer>
 <script type="module" src="script.js"></script>
 </body>

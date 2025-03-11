@@ -1,0 +1,34 @@
+section#projects {
+
+}
+
+.tabs {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.tab {
+
+}
+
+.tab.active {
+
+}
+
+.project-article {
+    
+}
+
+div#gallery {
+
+}
+
+.project-image {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 1em;
+}

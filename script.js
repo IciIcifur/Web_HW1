@@ -39,16 +39,22 @@ const openTab = (project) => {
             if (tab.textContent === project.title) tab.classList.add('active')
         })
 
+        const projectTitle = document.getElementById('project_title');
+        projectTitle.textContent = project.title;
+        projectTitle.href = project.link;
 
-        const projectContainer = document.getElementById('current_project');
-        projectContainer.innerHTML = '';
+        const projectDescription = document.getElementById('description');
+        projectDescription.textContent = project.description;
+
+        const projectGallery = document.getElementById('gallery');
+        projectGallery.innerHTML = '';
 
         project.imageUrls.forEach((url) => {
             const image = document.createElement('img')
             image.src = `./projects/${project.title}/${url}`;
             image.alt = url;
             image.classList.add('project-image')
-            projectContainer.appendChild(image)
+            projectGallery.appendChild(image)
         })
     }
 }
@@ -57,26 +63,3 @@ const openTab = (project) => {
 document.addEventListener('DOMContentLoaded', async () => {
     await fetchProjects();
 })
-
-/*
-document.addEventListener('DOMContentLoaded', () => {
-    // Функция для открытия вкладки и загрузки содержимого
-    function openTab(project) {
-        const tablinks = document.querySelectorAll('.tablinks');
-        tablinks.forEach(tab => {
-            tab.classList.remove('active');
-        });
-        event.currentTarget.classList.add('active');
-
-        fetch(`projects/${project}`)
-            .then(response => response.text())
-            .then(data => {
-                const tabContentContainer = document.getElementById('tab-content');
-                tabContentContainer.innerHTML = data;
-                tabContentContainer.style.display = 'block';
-            });
-    }
-
-    // Создание вкладок при загрузке страницы
-    createTabs();
-});*/

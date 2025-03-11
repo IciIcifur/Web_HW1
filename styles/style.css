@@ -1,0 +1,28 @@
+body {
+    font-family: Montserrat, sans-serif;
+    padding: 1em;
+}
+
+header {
+
+}
+
+section.global-section {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+    min-height: 24em;
+}
+
+footer {
+
+}
+
+footer.contacts {
+
+}
+
+footer p {
+
+}

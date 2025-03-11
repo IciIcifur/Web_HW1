@@ -1,0 +1,24 @@
+section#about {
+    margin-top: -8em;
+    display: flex;
+    width: 100%;
+    gap: 4em;
+    align-items: end;
+    justify-content: space-between;
+    flex-flow: row;
+}
+
+.about-article {
+    max-width: 32em;
+}
+
+.about-photo {
+    margin: 0 1em 0 0;
+}
+
+.about-photo img {
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+    border-radius: 12em;
+}
