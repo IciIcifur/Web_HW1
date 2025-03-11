@@ -1,9 +1,8 @@
 section#about {
-    margin-top: -8em;
     display: flex;
     width: 100%;
     gap: 4em;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
     flex-flow: row;
 }

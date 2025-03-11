@@ -34,13 +34,35 @@ h2 {
 }
 
 footer {
-
+    width: 100%;
 }
 
-footer.contacts {
-
+footer section.contacts {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
 }
 
 footer p {
+    color: rgba(167, 139, 250, 0.5);
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+footer section.contacts img {
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    object-fit: cover;
+    border-radius: 1em;
+    transition: background-color 100ms ease-in-out;
+}
+
+footer section.contacts img:hover {
+    background-color: rgba(167, 139, 250, 0.1);
 }

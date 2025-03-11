@@ -1,3 +1,18 @@
 section#stack {
-    align-items: end;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+article.stack-article {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#stack img {
+    width: 32em;
 }
