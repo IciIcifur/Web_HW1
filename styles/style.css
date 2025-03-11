@@ -1,10 +1,24 @@
 body {
+    color: #fafafa;
+    background-color: #27272a;
     font-family: Montserrat, sans-serif;
-    padding: 1em;
+    padding: 1em 8em;
 }
 
-header {
+body a {
+    color: #c4b5fd;
+}
 
+header h1 {
+    color: #f97316;
+    font-size: 6em;
+    margin: 0;
+}
+
+header h2 {
+    margin-top: -0.5em;
+    color: #c4b5fd;
+    font-weight: normal;
 }
 
 section.global-section {
@@ -13,6 +27,10 @@ section.global-section {
     flex-flow: column;
     flex-wrap: wrap;
     min-height: 24em;
+}
+
+h2 {
+    color: #f97316;
 }
 
 footer {
