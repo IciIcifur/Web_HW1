@@ -1,0 +1,60 @@
+body {
+    font-family: Montserrat, sans-serif;
+    padding: 1em;
+}
+
+section.global-section {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+    min-height: 28em;
+}
+
+section#about {
+    margin-top: -8em;
+    display: flex;
+    width: 100%;
+    gap: 4em;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row;
+}
+
+section#about article {
+    max-width: 32em;
+}
+
+figure.rounded-photo {
+    margin: 0 1em 0 0;
+}
+
+figure.rounded-photo img {
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+    border-radius: 12em;
+}
+
+.tabs {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.tab {
+
+}
+
+.tab.active {
+
+}
+
+.project-image {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 1em;
+}
