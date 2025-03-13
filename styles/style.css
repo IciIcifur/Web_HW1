@@ -6,7 +6,11 @@ body {
 }
 
 a {
-    color: #c4b5fd;
+    color: #a78bfa;
+}
+
+a:hover {
+    color: #c4b5fd
 }
 
 header h1 {
