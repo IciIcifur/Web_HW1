@@ -1,8 +1,13 @@
+html {
+    margin: 0;
+    font-size: 16px;
+}
+
 body {
     color: #fafafa;
     background-color: #27272a;
     font-family: Montserrat, sans-serif;
-    padding: 1em 8em;
+    padding: 1rem 8rem;
 }
 
 a {
@@ -15,12 +20,12 @@ a:hover {
 
 header h1 {
     color: #f97316;
-    font-size: 6em;
+    font-size: 6rem;
     margin: 0;
 }
 
 header h2 {
-    margin-top: -0.5em;
+    margin-top: -0.5rem;
     color: #c4b5fd;
     font-weight: normal;
 }
@@ -30,7 +35,7 @@ section.global-section {
     justify-content: center;
     flex-flow: column;
     flex-wrap: wrap;
-    min-height: 24em;
+    min-height: 24rem;
 }
 
 h2 {
@@ -46,8 +51,8 @@ footer section.contacts {
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
-    padding: 1em;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 footer p {
@@ -59,14 +64,32 @@ footer p {
 }
 
 footer section.contacts img {
-    width: 2em;
-    height: 2em;
-    padding: 0.5em;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
     object-fit: cover;
-    border-radius: 1em;
+    border-radius: 1rem;
     transition: background-color 100ms ease-in-out;
 }
 
 footer section.contacts img:hover {
     background-color: rgba(167, 139, 250, 0.1);
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+    body {
+        padding: 2rem 2rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    body {
+        padding: 2rem 2rem;
+    }
+
+    header h1 {
+        font-size: 8rem;
+    }
 }

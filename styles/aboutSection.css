@@ -1,14 +1,14 @@
 section#about {
     display: flex;
     width: 100%;
-    gap: 4em;
+    gap: 4rem;
     align-items: center;
     justify-content: space-between;
     flex-flow: row;
 }
 
 .about-article {
-    max-width: 32em;
+    max-width: 32rem;
 }
 
 .about-photo {
@@ -19,5 +19,30 @@ section#about {
     height: 320px;
     width: 320px;
     object-fit: cover;
-    border-radius: 12em;
+    border-radius: 12rem;
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+    .about-photo img {
+        height: 280px;
+        width: 280px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    section#about {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .about-photo {
+        width: 100%;
+    }
+
+    .about-photo img {
+        width: 100%;
+        border-radius: 1rem;
+    }
 }

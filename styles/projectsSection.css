@@ -1,5 +1,5 @@
 section#projects {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .tabs {
@@ -7,19 +7,19 @@ section#projects {
     justify-content: start;
     flex-wrap: wrap;
     width: 100%;
-    gap: 1em;
-    margin: 1em 0;
+    gap: 1rem;
+    margin: 1rem 0;
 }
 
 .tab {
     font-family: Montserrat, sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
     color: #a78bfa;
-    padding: 0.5em 2em;
+    padding: 0.5rem 2rem;
     border-style: solid;
     border-width: 1.5px;
     border-color: #a78bfa;
-    border-radius: 2em;
+    border-radius: 2rem;
     background: none;
     cursor: pointer;
     transition: background-color 100ms ease-in-out;
@@ -35,7 +35,7 @@ section#projects {
 
 .project-article a {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     transition: color 100ms ease-in-out;
 }
 
@@ -43,14 +43,15 @@ div#gallery {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2em;
+    justify-content: start;
+    gap: 1rem;
 }
 
 .project-image {
     height: 200px;
     width: 200px;
     object-fit: cover;
-    border-radius: 1em;
+    border-radius: 1rem;
     transition: height 100ms ease-in-out,
     width 100ms ease-in-out;
 }
@@ -58,4 +59,37 @@ div#gallery {
 .project-image:hover {
     height: 220px;
     width: 220px;
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+    div#gallery {
+        gap: 2rem;
+    }
+
+    .project-image {
+        height: 264px;
+        width: 264px;
+    }
+
+    .project-image:hover {
+        height: 272px;
+        width: 272px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    div#gallery {
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .project-image {
+        width: 100%
+    }
+
+    .project-image:hover {
+        width: 100%
+    }
 }
