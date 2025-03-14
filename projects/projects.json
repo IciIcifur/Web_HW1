@@ -6,11 +6,18 @@
       "link": "https://github.com/foggyTeam/foggy",
       "imageUrls": [
         "1.png",
-        "2.png",
         "3.png",
         "4.png",
+        "6.png",
+        "7.png",
+        "8.png",
+        "10.png",
+        "11.png",
+        "13.png",
         "5.png",
-        "6.png"
+        "2.png",
+        "9.png",
+        "12.png"
       ]
     },
     {
@@ -41,7 +48,7 @@
       ]
     },
     {
-      "title": "foggy theme",
+      "title": "foggy by AI",
       "description": "AI-generated moody images inspired by foggy",
       "link": "/",
       "imageUrls": [
@@ -50,7 +57,10 @@
         "3.webp",
         "4.webp",
         "5.webp",
-        "6.webp"
+        "6.webp",
+        "7.webp",
+        "8.webp",
+        "9.webp"
       ]
     }
   ]
